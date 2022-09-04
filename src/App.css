@@ -1,38 +1,153 @@
 .App {
+  height: 100vh;
   text-align: center;
+  /* background-color: #61dafb; */
+}
+.sign_up_form_main {
+  padding: 50px 0px;
+  width: 100%;
+  height: 500px;
+  border-radius: 20px 0px;
+}
+.form_det {
+  width: 100%;
+  /* height: 508px; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form_main {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #ffffff;
+}
+.form_main form {
+  width: 350px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .form_det {
+    height: 100%;
+  }
+  .form_main form {
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  label {
+    line-height: 2;
+    text-align: left;
+    display: block !important;
+    /* margin-bottom: 13px; */
+    color: rgb(108, 20, 20);
+    font-size: 12px;
+    font-weight: 200;
+  }
+}
+.form-outline {
+  margin: 16px 0px !important;
+}
+h4 {
+  font-weight: 600;
+  color: #bf1650;
+  text-align: center;
+  padding-bottom: 3px;
+  text-transform: uppercase;
+  /* border: 1px solid rgb(79, 98, 148); */
+}
+.form-outline {
+  position: relative;
+  background-color: #fff;
+  /* border-radius: 10px 0px; */
+  border: 0;
+}
+.multiSelectContainer {
+  background-color: #fff;
+}
+p {
+  color: #bf1650;
+  text-align: left;
+}
+
+p::before {
+  display: inline;
+  content: "⚠ ";
+}
+.form-control-s {
+  border: 1px solid #bf1650;
+  border-radius: 4px 0px !important;
+  overflow: hidden !important;
+}
+
+.form-outline .form-control ~ .form-label {
+  color: #bf1650;
+}
+.invalid-feedback {
+  font-size: 0.605rem !important;
+}
+label {
+  line-height: 2;
+  text-align: left;
+  display: block !important;
+  /* margin-bottom: 13px; */
+  color: rgb(108, 20, 20);
+  font-size: 10px;
+  font-weight: 200;
+}
+.form-control {
+  font-size: 12px !important;
+}
+.searchWrapper {
+  padding: 3px 5px !important;
+  font-size: 12px !important;
+}
+input[type="radio"] {
+  border: 1px solid #bf1650;
+  padding: 0px !important;
+}
+button[type="submit"],
+input[type="submit"] {
+  background: #bf1650;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  border: none;
+
+  padding: 12px 24px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 0px 10px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+  background: #ff5c95;
+  color: #000;
+}
+
+button[type="submit"],
+input[type="submit"] {
+  -webkit-appearance: none;
+}
+
+button[type="button"] {
+  /* display: block; */
+  appearance: none;
+  background: #333;
   color: white;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 23px;
+  margin: 0px 10px;
+  border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+hr {
+  margin-top: 30px;
 }
